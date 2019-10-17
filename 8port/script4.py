@@ -10,8 +10,8 @@ pinList = [2, 3, 4, 17, 27, 22, 10, 9]
 
 # loop through pins and set mode and state to 'low'
 
-for i in pinList: 
-    GPIO.setup(i, GPIO.OUT) 
+for i in pinList:
+    GPIO.setup(i, GPIO.OUT)
     GPIO.output(i, GPIO.HIGH)
 
 # time to sleep between operations in the main loop
@@ -24,7 +24,7 @@ try:
    count = 9
    while (count > 0):
 
-      print '   The count is:', count
+      print ('   The count is:'), count
 
       for i in pinList:
          GPIO.output(i, GPIO.LOW)
@@ -42,7 +42,7 @@ try:
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
-  print "  Quit"
+  print ("  Quit")
 
   # Reset GPIO settings
   GPIO.cleanup()
