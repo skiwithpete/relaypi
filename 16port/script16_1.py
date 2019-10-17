@@ -10,8 +10,8 @@ pinList = [2, 3, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13, 19, 26, 21, 20]
 
 # loop through pins and set mode and state to 'low'
 
-for i in pinList: 
-    GPIO.setup(i, GPIO.OUT) 
+for i in pinList:
+    GPIO.setup(i, GPIO.OUT)
     GPIO.output(i, GPIO.HIGH)
 
 # time to sleep between operations in the main loop
@@ -22,59 +22,59 @@ SleepTimeL = 2
 
 try:
   GPIO.output(2, GPIO.LOW)
-  print "ONE"
-  time.sleep(SleepTimeL); 
+  print ("ONE")
+  time.sleep(SleepTimeL);
   GPIO.output(3, GPIO.LOW)
-  print "TWO"
-  time.sleep(SleepTimeL);  
+  print ("TWO")
+  time.sleep(SleepTimeL);
   GPIO.output(4, GPIO.LOW)
-  print "THREE"
+  print ("THREE")
   time.sleep(SleepTimeL);
   GPIO.output(17, GPIO.LOW)
-  print "FOUR"
+  print ("FOUR")
   time.sleep(SleepTimeL);
   GPIO.output(27, GPIO.LOW)
-  print "FIVE"
+  print ("FIVE")
   time.sleep(SleepTimeL);
   GPIO.output(22, GPIO.LOW)
-  print "SIX"
+  print ("SIX")
   time.sleep(SleepTimeL);
   GPIO.output(10, GPIO.LOW)
-  print "SEVEN"
+  print ("SEVEN")
   time.sleep(SleepTimeL);
   GPIO.output(9, GPIO.LOW)
-  print "EIGHT"
+  print ("EIGHT")
   time.sleep(SleepTimeL);
   GPIO.output(11, GPIO.LOW)
-  print "NINE"
-  time.sleep(SleepTimeL); 
+  print ("NINE")
+  time.sleep(SleepTimeL);
   GPIO.output(5, GPIO.LOW)
-  print "TEN"
-  time.sleep(SleepTimeL);  
+  print ("TEN")
+  time.sleep(SleepTimeL);
   GPIO.output(6, GPIO.LOW)
-  print "ELEVEN"
+  print ("ELEVEN")
   time.sleep(SleepTimeL);
   GPIO.output(13, GPIO.LOW)
-  print "TWELVE"
+  print ("TWELVE")
   time.sleep(SleepTimeL);
   GPIO.output(19, GPIO.LOW)
-  print "THIRTEEN"
+  print ("THIRTEEN")
   time.sleep(SleepTimeL);
   GPIO.output(26, GPIO.LOW)
-  print "FOURTEEN"
+  print ("FOURTEEN")
   time.sleep(SleepTimeL);
   GPIO.output(21, GPIO.LOW)
-  print "FIFTEEN"
+  print ("FIFTEEN")
   time.sleep(SleepTimeL);
   GPIO.output(20, GPIO.LOW)
-  print "SIXTEEN"
+  print ("SIXTEEN")
   time.sleep(SleepTimeL);
   GPIO.cleanup()
-  print "Good bye!"
+  print ("Good bye!")
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
-  print "  Quit"
+  print ("  Quit")
 
   # Reset GPIO settings
   GPIO.cleanup()
