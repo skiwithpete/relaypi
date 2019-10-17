@@ -10,8 +10,8 @@ pinList = [2, 3, 4, 17, 27, 22, 10, 9]
 
 # loop through pins and set mode and state to 'low'
 
-for i in pinList: 
-    GPIO.setup(i, GPIO.OUT) 
+for i in pinList:
+    GPIO.setup(i, GPIO.OUT)
     GPIO.output(i, GPIO.HIGH)
 
 # time to sleep between operations in the main loop
@@ -22,35 +22,35 @@ SleepTimeL = 2
 
 try:
   GPIO.output(2, GPIO.LOW)
-  print "ONE"
-  time.sleep(SleepTimeL); 
+  print ("ONE")
+  time.sleep(SleepTimeL);
   GPIO.output(3, GPIO.LOW)
-  print "TWO"
-  time.sleep(SleepTimeL);  
+  print ("TWO")
+  time.sleep(SleepTimeL);
   GPIO.output(4, GPIO.LOW)
-  print "THREE"
+  print ("THREE")
   time.sleep(SleepTimeL);
   GPIO.output(17, GPIO.LOW)
-  print "FOUR"
+  print ("FOUR")
   time.sleep(SleepTimeL);
   GPIO.output(27, GPIO.LOW)
-  print "FIVE"
+  print ("FIVE")
   time.sleep(SleepTimeL);
   GPIO.output(22, GPIO.LOW)
-  print "SIX"
+  print ("SIX")
   time.sleep(SleepTimeL);
   GPIO.output(10, GPIO.LOW)
-  print "SEVEN"
+  print ("SEVEN")
   time.sleep(SleepTimeL);
   GPIO.output(9, GPIO.LOW)
-  print "EIGHT"
+  print ("EIGHT")
   time.sleep(SleepTimeL);
   GPIO.cleanup()
-  print "Good bye!"
+  print ("Good bye!")
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
-  print "  Quit"
+  print ("  Quit")
 
   # Reset GPIO settings
   GPIO.cleanup()
